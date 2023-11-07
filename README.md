@@ -7,6 +7,6 @@
 | **Kelas** | TI.22.A4 |
 | **Mata Kuliah** | Pemrograman Android |
 
-### Vidio tugas pertemuan 6 : [Sourcecode](https://drive.google.com/drive/folders/1c6yRU-d1Xa0UIBP04TY-FIB7L1xEMNfp)
+### Vidio tugas pertemuan 6 : [Sourcecode]()
 
 
