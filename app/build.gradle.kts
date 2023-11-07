@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId = "com.hello"
-        minSdk = 21
+        minSdk = 26
         targetSdk = 33
         versionCode = 111
-        versionName = "1.1.1"
+        versionName = "1.1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

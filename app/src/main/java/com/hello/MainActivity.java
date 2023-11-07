@@ -3,11 +3,20 @@ package com.hello;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,13 +28,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popup);
-        mShowCount = (TextView) findViewById(R.id.show_count);
+        mShowCount = findViewById(R.id.show_count);
     }
 
     public void countUp(View view) {
         EditText input_limit = findViewById(R.id.input_limit);
 
-        // Periksa apakah input limit tidak kosong sebelum mengambil nilai
         if (!input_limit.getText().toString().isEmpty()) {
             int limit = Integer.parseInt(input_limit.getText().toString());
 
@@ -39,11 +47,16 @@ public class MainActivity extends AppCompatActivity {
         mCount = secondCount;
         secondCount = next + mCount;
 
-        if (mShowCount != null)
+        if (mShowCount != null) {
             mShowCount.setText(Integer.toString(next));
+
+            if (next % 2 != 0) { // Check if the number is odd
+                mShowCount.setTextColor(Color.parseColor("#BF00FF")); // Set text color to orange
+            } else {
+                mShowCount.setTextColor(Color.BLACK); // Set text color to black for even numbers
+            }
+        }
     }
-
-
 
     public void showToast(View view) {
         Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
@@ -55,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         secondCount = 1;
         if (mShowCount != null) {
             mShowCount.setText("0");
-        }
+            mShowCount.setTextColor(Color.BLACK); // Reset text color to black
         }
     }
+}
