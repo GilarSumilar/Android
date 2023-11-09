@@ -14,13 +14,16 @@
 
 **Hasil tugas :**
 
-<img alt="Coding" width="700" src="">
+<img align="center" alt="Coding" width="200" src="https://github.com/GilarSumilar/Android/blob/main/Gambar/Animation.gif">
 
 #### [Sourcecode_Java](https://github.com/GilarSumilar/Android/blob/main/app/src/main/java/com/hello/MainActivity.java)
 
 #### [Sourcecode_Activity](https://github.com/GilarSumilar/Android/blob/main/app/src/main/res/layout/activity_popup.xml)
 
 #### *Note :*
+Update Versi dari 1.1.1 - 1.1.2
+
+![0.1](Gambar/1.png)
 
 
 
