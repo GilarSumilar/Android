@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloAppTI22A4"
         tools:targetApi="31" >
-        <activity
+        <!--<activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -21,13 +24,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <activity-->
-<!--            android:name=".MainActivitySecond"-->
-<!--            android:exported="true">-->
+        <! -        <activity-->
+        <!--            android:name=".MainActivitySecond"-->
+        <!--            android:exported="true">-->
 
-<!--            <meta-data android:name="android.support.PARENT_ACTIVITY"-->
-<!--                       android:value=".MainActivityOne" />-->
-<!--        </activity>-->
+        <!--            <meta-data android:name="android.support.PARENT_ACTIVITY"-->
+        <!--                       android:value=".MainActivityOne" />-->
+        <!--        </activity>-->
+        <activity android:name=".MenuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity_main">
+            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolSatu ditekan -->
+        </activity>
+
+        <activity android:name=".MainActivityOne">
+            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolDua ditekan -->
+        </activity>
+
+        <activity android:name=".ScrollingIceCold">
+            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolTiga ditekan -->
+        </activity>
+
+        <activity android:name=".alarmku">
+            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolEmpat ditekan -->
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolLima ditekan -->
+        </activity>
+
+        <activity android:name=".MainActivitySecond">
+            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolEnam ditekan -->
+        </activity>
     </application>
 
 </manifest>
