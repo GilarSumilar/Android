@@ -9,4 +9,5 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorFibonacciBlue">#36A2F4</color>
     <color name="colorFibonacciGreen">#6DDE08</color>
+    <color name="Logo">#757575</color>
 </resources>

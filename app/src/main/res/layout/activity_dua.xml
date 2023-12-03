@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
+    tools:context=".MainActivitySecond">
 
     <TextView
         android:id="@+id/text_header"
@@ -50,6 +50,7 @@
         android:ems="10"
         android:hint="@string/editText_second"
         android:inputType="textLongMessage"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_second"
         app:layout_constraintHorizontal_bias="0.00"

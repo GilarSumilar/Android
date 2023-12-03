@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -61,5 +62,10 @@ public class alarmku extends AppCompatActivity {
             alarmManager.cancel(pendingIntent);
             Toast.makeText(alarmku.this, "ALARM OFF", Toast.LENGTH_SHORT).show();
         }
+    }
+    public void onReceive(Context context, Intent intent) {
+        // Tindakan yang akan dilakukan saat alarm berbunyi
+        // Misalnya, menampilkan notifikasi atau menjalankan layanan
+        Toast.makeText(context, "Alarm berbunyi!", Toast.LENGTH_SHORT).show();
     }
 }

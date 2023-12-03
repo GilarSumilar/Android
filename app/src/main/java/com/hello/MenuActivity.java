@@ -1,6 +1,5 @@
 package com.hello;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,13 +9,13 @@ import androidx.cardview.widget.CardView;
 public class MenuActivity extends AppCompatActivity {
 
     CardView tombolSatu;
-    CardView tombolDua;
     CardView tombolTiga;
+    CardView tombolDua;
     CardView tombolEmpat;
     CardView tombolLima;
     CardView tombolEnam;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,30 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         tombolSatu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Ketika tombolSatu ditekan, pindah ke HelloActivity
                 Intent intent = new Intent(MenuActivity.this, activity_main.class);
-                startActivity(intent);
-            }
-        });
-
-        tombolDua = findViewById(R.id.cdMenu3);
-        tombolDua.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Ketika tombolDua ditekan, lakukan aksi yang diinginkan
-                // Misalnya, pindah ke aktivitas lain atau jalankan fungsi khusus
-                Intent intent = new Intent(MenuActivity.this, MainActivityOne.class);
-                startActivity(intent);
-            }
-        });
-
-        tombolTiga = findViewById(R.id.cdMenu3);
-        tombolTiga.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Ketika tombolDua ditekan, lakukan aksi yang diinginkan
-                // Misalnya, pindah ke aktivitas lain atau jalankan fungsi khusus
-                Intent intent = new Intent(MenuActivity.this, ScrollingIceCold.class);
                 startActivity(intent);
             }
         });
@@ -59,8 +35,6 @@ public class MenuActivity extends AppCompatActivity {
         tombolEmpat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Ketika tombolDua ditekan, lakukan aksi yang diinginkan
-                // Misalnya, pindah ke aktivitas lain atau jalankan fungsi khusus
                 Intent intent = new Intent(MenuActivity.this, alarmku.class);
                 startActivity(intent);
             }
@@ -70,9 +44,16 @@ public class MenuActivity extends AppCompatActivity {
         tombolLima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Ketika tombolDua ditekan, lakukan aksi yang diinginkan
-                // Misalnya, pindah ke aktivitas lain atau jalankan fungsi khusus
                 Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tombolTiga = findViewById(R.id.cdMenu3);
+        tombolTiga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, MainActivityOne.class);
                 startActivity(intent);
             }
         });
@@ -81,9 +62,16 @@ public class MenuActivity extends AppCompatActivity {
         tombolEnam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Ketika tombolDua ditekan, lakukan aksi yang diinginkan
-                // Misalnya, pindah ke aktivitas lain atau jalankan fungsi khusus
-                Intent intent = new Intent(MenuActivity.this, MainActivityOne.class);
+                Intent intent = new Intent(MenuActivity.this, ScrollingIceCold.class);
+                startActivity(intent);
+            }
+        });
+
+        tombolDua = findViewById(R.id.cdMenu2);
+        tombolDua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, MapActivity.class);
                 startActivity(intent);
             }
         });
